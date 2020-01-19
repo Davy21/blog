@@ -1,14 +1,9 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Nav, Navbar, Button } from "react-bootstrap"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,
@@ -16,17 +11,28 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      {/* Navbar */}
+      <Navbar expand="lg">
+        <Navbar.Brand href="/">
+          <h3
+            style={{
+              color: "gray",
+            }}
+          >
+            {siteTitle}
+          </h3>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Button variant="outline-success"># I shit on Mars</Button>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/homepage">Story</Nav.Link>
+            <Nav.Link href="/aboutme">About Me</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   </header>
 )
