@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/aboutme.js"],"names":["AboutMe"],"mappings":"2FAAA,gCAMeA,UAJC,WACd,OAAO","file":"component---src-pages-aboutme-js-1fc13ec4f3e35ff8f27b.js","sourcesContent":["import React, { Component } from \"react\"\n\nconst AboutMe = () => {\n  return <div>Under Construction</div>\n}\n\nexport default AboutMe\n"],"sourceRoot":""}
