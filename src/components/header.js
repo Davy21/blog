@@ -28,8 +28,8 @@ const Header = ({ siteTitle }) => (
             <Button variant="outline-success"># I shit on Mars</Button>
           </Nav>
           <Nav>
-            <Nav.Link href="/homepage">Story</Nav.Link>
-            <Nav.Link href="/aboutme">About Me</Nav.Link>
+            <Nav.Link href="/blog/homepage">Story</Nav.Link>
+            <Nav.Link href="/blog/aboutme">About Me</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
