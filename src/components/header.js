@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { Nav, Navbar, Button } from "react-bootstrap"
+import { Nav, Navbar } from "react-bootstrap"
 import { withPrefix } from "gatsby"
 
 const Header = ({ siteTitle }) => (
