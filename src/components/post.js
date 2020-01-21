@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Button } from "react-bootstrap"
+import { Button, Image } from "react-bootstrap"
 
 const Post = ({ title, description, tag }) => {
   return (
@@ -12,6 +12,13 @@ const Post = ({ title, description, tag }) => {
       }}
     >
       <div>
+        <div className="text-center">
+          <Image
+            src={require("../images/gatsby-astronaut.png")}
+            rounded
+            responsive
+          />
+        </div>
         <h5>{title}</h5>
         <p>{description}</p>
         <div>
