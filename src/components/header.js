@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { Nav, Navbar, Button } from "react-bootstrap"
+import { withPrefix } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -13,7 +14,7 @@ const Header = ({ siteTitle }) => (
     >
       {/* Navbar */}
       <Navbar expand="lg">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href={withPrefix("/")}>
           <h3
             style={{
               color: "gray",
@@ -28,8 +29,8 @@ const Header = ({ siteTitle }) => (
             <Button variant="outline-success"># I shit on Mars</Button>
           </Nav>
           <Nav>
-            <Nav.Link href="/blog/homepage">Story</Nav.Link>
-            <Nav.Link href="/blog/aboutme">About Me</Nav.Link>
+            <Nav.Link href={withPrefix("/homepage")}>Story</Nav.Link>
+            <Nav.Link href={withPrefix("/aboutme")}>About Me</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
