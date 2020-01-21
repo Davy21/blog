@@ -2,10 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 import { Button, Image } from "react-bootstrap"
 
-const Post = ({ title, description, tag }) => {
+const PostPreview = ({ title, description, tag, image, content }) => {
   return (
     <Link
-      to="/"
+      to="/post/"
+      state={{
+        image,
+        title,
+        content,
+      }}
       style={{
         textDecoration: "none",
         color: "black",
@@ -14,9 +19,9 @@ const Post = ({ title, description, tag }) => {
       <div>
         <div className="text-center">
           <Image
-            src={require("../images/gatsby-astronaut.png")}
+            className="thumbnail"
+            src={require(`../images/${image}`)}
             rounded
-            responsive
           />
         </div>
         <h5>{title}</h5>
@@ -30,4 +35,4 @@ const Post = ({ title, description, tag }) => {
   )
 }
 
-export default Post
+export default PostPreview

@@ -1,0 +1,19 @@
+author: Davy Cheng
+description: my blog content
+posts:
+  - id: 1
+    date: 2020-01-21 23:35
+    image: post1.jpg
+    title: "My view on Success"
+    tag: "Life"
+    description: "Everyone has its own definition of success..."
+    content: "Everyone has its own definition of sucesss. So, what about mine ? I think my success will be 
+    based on how big the impact I can bring to the community. It is kind of funny right now as I am writing this.
+    I will be constantly thinking to come up with better content. For now, this is only for development purpose."
+  - id: 2
+    date: 2020-01-21 23:36
+    image: gatsby-astronaut.png
+    title: "Post 2"
+    tag: "Software"
+    description: "Desc 2"
+    content: "hahaha testing 123456"

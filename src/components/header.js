@@ -25,9 +25,7 @@ const Header = ({ siteTitle }) => (
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Button variant="outline-success"># I shit on Mars</Button>
-          </Nav>
+          <Nav className="mr-auto"></Nav>
           <Nav>
             <Nav.Link href={withPrefix("/homepage")}>Story</Nav.Link>
             <Nav.Link href={withPrefix("/aboutme")}>About Me</Nav.Link>

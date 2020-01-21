@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Post from "../components/post"
+import PostPreview from "../components/postPreview"
 import Quote from "../components/quote"
 import { Container, Row, Col } from "react-bootstrap"
+import postData from "../../content/posts.yaml"
 
 const Homepage = () => {
   return (
@@ -15,21 +16,21 @@ const Homepage = () => {
             <Quote />
           </Col>
         </Row>
-        <Row className="mt-2 mb-2">
-          <Col>
-            <Post title="title1" description="desc1" tag="tag1" />
-          </Col>
-        </Row>
-        <Row className="mt-2 mb-2">
-          <Col>
-            <Post title="title2" description="desc2" tag="tag2" />
-          </Col>
-        </Row>
-        <Row className="mt-2 mb-2">
-          <Col>
-            <Post title="title3" description="desc3" tag="tag3" />
-          </Col>
-        </Row>
+        {postData.posts.map((item, index) => {
+          return (
+            <Row key={`item_${index}`} className="mt-2 mb-2">
+              <Col>
+                <PostPreview
+                  title={item.title}
+                  description={item.description}
+                  tag={item.tag}
+                  image={item.image}
+                  content={item.content}
+                />
+              </Col>
+            </Row>
+          )
+        })}
       </Container>
     </Layout>
   )
