@@ -17,22 +17,17 @@ const Homepage = () => {
         </Row>
         <Row className="mt-2 mb-2">
           <Col>
-            <Post />
+            <Post title="title1" description="desc1" tag="tag1" />
           </Col>
         </Row>
         <Row className="mt-2 mb-2">
           <Col>
-            <Post />
+            <Post title="title2" description="desc2" tag="tag2" />
           </Col>
         </Row>
         <Row className="mt-2 mb-2">
           <Col>
-            <Post />
-          </Col>
-        </Row>
-        <Row className="mt-2 mb-2">
-          <Col>
-            <Post />
+            <Post title="title3" description="desc3" tag="tag3" />
           </Col>
         </Row>
       </Container>

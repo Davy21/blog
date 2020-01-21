@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Button } from "react-bootstrap"
 
-const Post = () => {
+const Post = ({ title, description, tag }) => {
   return (
     <Link
       to="/"
@@ -12,13 +12,10 @@ const Post = () => {
       }}
     >
       <div>
-        <h5>#1 My definition on success</h5>
-        <p>
-          Everyone has its own definition of success. So, let's talk about it a
-          little bit.
-        </p>
+        <h5>{title}</h5>
+        <p>{description}</p>
         <div>
-          <Button variant="outline-success">Self-Perspective</Button>
+          <Button variant="outline-success">{tag}</Button>
         </div>
       </div>
       <hr />
