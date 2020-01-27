@@ -1,20 +1,31 @@
 import React from "react"
+import { Row, Col } from "react-bootstrap"
 
 const Footer = () => {
   return (
-    <div
+    <Row
       style={{
-        position: "relative",
-        bottom: "10px",
-        margin: "auto 0",
-        color: "gray",
+        backgroundColor: "gray",
+        color: "white",
+        height: "100px",
       }}
     >
-      <footer>
-        Gofo © {new Date().getFullYear()} | Business Enquiry :
-        davy_cheng1221@yahoo.com
-      </footer>
-    </div>
+      <Col className="text-center">
+        <div
+          style={{
+            position: "relative",
+            top: "10px",
+            bottom: "10px",
+            margin: "auto 0",
+          }}
+        >
+          <footer>
+            Gofo © {new Date().getFullYear()} | Business Enquiry :
+            davy_cheng1221@yahoo.com
+          </footer>
+        </div>
+      </Col>
+    </Row>
   )
 }
 
