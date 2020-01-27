@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+import "font-awesome/css/font-awesome.min.css"
 import "./src/styles/layout.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./src/styles/global.css"
