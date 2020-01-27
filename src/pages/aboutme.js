@@ -1,7 +1,8 @@
 import React from "react"
+import Layout from "../components/layout"
 
 const AboutMe = () => {
-  return <div>Under Construction</div>
+  return <Layout>Under Construction</Layout>
 }
 
 export default AboutMe
