@@ -29,7 +29,7 @@ const Post = ({ location }) => {
       </Layout>
     )
   } else {
-    return <></>
+    return null
   }
 }
 
