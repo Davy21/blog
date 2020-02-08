@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Row
       style={{
-        backgroundColor: "gray",
+        backgroundColor: "#182628",
         color: "white",
         height: "100px",
       }}
@@ -38,6 +38,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 className="noDecoration"
+                rel="noopener noreferrer"
                 href="https://github.com/Davy21"
               >
                 Davy21
@@ -54,6 +55,7 @@ const Footer = () => {
               <a
                 target="_blank"
                 className="noDecoration"
+                rel="noopener noreferrer"
                 href="https://api.whatsapp.com/send?phone=60127960821"
               >
                 012-7960821
@@ -76,6 +78,7 @@ const Footer = () => {
             <a
               target="_blank"
               className="noDecoration"
+              rel="noopener noreferrer"
               href="https://www.gofo.com.my"
             >
               Gofo © {new Date().getFullYear()}

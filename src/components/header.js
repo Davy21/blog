@@ -15,13 +15,8 @@ const Header = ({ siteTitle }) => (
       {/* Navbar */}
       <Navbar expand="lg">
         <Navbar.Brand href={withPrefix("/")}>
-          <h3
-            style={{
-              color: "gray",
-            }}
-          >
-            {siteTitle}
-          </h3>
+          <h3>{siteTitle}</h3>
+          <h6>A blog about myself</h6>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
