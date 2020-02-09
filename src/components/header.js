@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
       <Navbar expand="lg">
         <Navbar.Brand href={withPrefix("/")}>
           <h3>{siteTitle}</h3>
-          <h6>A blog about myself</h6>
+          <h6>Humanity & Tech blog</h6>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
