@@ -4,6 +4,7 @@ import { Row, Col } from "react-bootstrap"
 const Footer = () => {
   return (
     <div
+      className="pt-2"
       style={{
         backgroundColor: "#182628",
         color: "white",
@@ -17,6 +18,7 @@ const Footer = () => {
         >
           <Col>
             <div
+              className="pl-3"
               style={{
                 padding: "10px 0 10px 0",
               }}
