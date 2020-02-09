@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav>
-            <Nav.Link href={withPrefix("/")}>Story</Nav.Link>
+            <Nav.Link href={withPrefix("/")}>Blog</Nav.Link>
             <Nav.Link href={withPrefix("/aboutme")}>About Me</Nav.Link>
           </Nav>
         </Navbar.Collapse>
