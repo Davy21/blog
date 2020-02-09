@@ -27,7 +27,7 @@ const PostPreview = ({ title, description, tag, image, content }) => {
         <h5>{title}</h5>
         <p>{description}</p>
         <div>
-          <Button variant="outline-success">{tag}</Button>
+          <Button variant="outline-warning">{tag}</Button>
         </div>
       </div>
       <hr />

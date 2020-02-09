@@ -75,7 +75,7 @@ const Footer = () => {
         <Col>
           <hr
             style={{
-              border: "1px solid white",
+              border: "0.3px solid white",
             }}
           />
         </Col>
@@ -85,7 +85,7 @@ const Footer = () => {
           backgroundColor: "#182628",
           fontSize: "12px",
           color: "white",
-          padding: "0 0 10px 0",
+          padding: "0 0 15px 0",
         }}
       >
         <Col className="text-center">

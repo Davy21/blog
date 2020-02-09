@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap"
 
 const QuoteOfTheDay = () => {
   return (
-    <Card border="success">
+    <Card border="warning">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p>
