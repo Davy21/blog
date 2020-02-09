@@ -19,7 +19,7 @@ const Footer = () => {
               textAlign: "left",
             }}
           >
-            <h6>Contacts</h6>
+            <h6>Connect with me</h6>
             <footer>
               <div>
                 <i className="fa fa-github"></i>{" "}
@@ -95,7 +95,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://www.gofo.com.my"
           >
-            Copyright © {new Date().getFullYear()} Gofo
+            Copyright © {new Date().getFullYear()} Gofo. All Rights Reserved.
           </a>
         </Col>
       </Row>
