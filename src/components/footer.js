@@ -58,13 +58,14 @@ const Footer = () => {
           </Col>
           <Col>
             <div
+              className="pl-3"
               style={{
                 padding: "10px 0 10px 0",
               }}
             >
               <h6>Why blog ?</h6>
-              This blog will be a platform where I share my perspective,opinion,
-              experience as well as my software engineering's journey.
+              This blog will be a platform where I share my perspective,
+              opinion, experience as well as my software engineering's journey.
             </div>
           </Col>
         </Row>
