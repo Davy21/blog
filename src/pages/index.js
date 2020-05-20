@@ -16,7 +16,7 @@ const Homepage = () => {
             <Quote />
           </Col>
         </Row>
-        {postData.posts.map((item, index) => {
+        {postData.posts.reverse().map((item, index) => {
           return (
             <Row key={`item_${index}`} className="mt-2 mb-2">
               <Col>
