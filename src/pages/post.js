@@ -2,14 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import { Row, Col, Image } from "react-bootstrap"
 
-import { withPrefix } from "gatsby-link"
 import { useLocation } from "@reach/router"
+import pageLoader from "../components/dynamicLoad"
 
 const Post = ({ location }) => {
   const loc = useLocation()
-  if (loc.pathname === withPrefix("/post/")) {
-    require("../styles/post.css")
-  }
+  pageLoader(loc.pathname)
 
   if (location.state) {
     const { image, title, content } = location.state
