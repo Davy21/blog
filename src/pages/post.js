@@ -2,15 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Row, Col, Image } from "react-bootstrap"
 
-import { useLocation } from "@reach/router"
-import { withPrefix } from "gatsby-link"
-
 const Post = ({ location }) => {
-  const loc = useLocation()
-  if (loc.pathname === withPrefix("/post/")) {
-    import("../styles/post.css")
-  }
-
   if (location.state) {
     const { image, title, content } = location.state
     return (

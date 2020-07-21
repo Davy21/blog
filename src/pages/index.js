@@ -6,7 +6,15 @@ import Quote from "../components/quote"
 import { Container, Row, Col } from "react-bootstrap"
 import postData from "../../content/posts.yaml"
 
+import { useLocation } from "@reach/router"
+import { withPrefix } from "gatsby-link"
+
 const Homepage = () => {
+  const loc = useLocation()
+  if (loc.pathname === withPrefix("/blog/")) {
+    import("../styles/post.css")
+  }
+
   return (
     <Layout>
       <SEO title="Homepage" />
