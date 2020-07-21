@@ -11,6 +11,7 @@ import { withPrefix } from "gatsby-link"
 
 const Homepage = () => {
   const loc = useLocation()
+  console.log(loc.pathname)
   if (loc.pathname === withPrefix("/blog/")) {
     import("../styles/post.css")
   }
