@@ -10,11 +10,11 @@ import { useLocation } from "@reach/router"
 import { withPrefix } from "gatsby-link"
 
 const Homepage = () => {
-  const loc = useLocation()
-  console.log(loc.pathname)
-  if (loc.pathname === "/blog/") {
-    import("../styles/post.css")
-  }
+  // const loc = useLocation()
+  // console.log(loc.pathname)
+  // if (loc.pathname === "/blog/") {
+  //   import("../styles/post.css")
+  // }
 
   return (
     <Layout>
